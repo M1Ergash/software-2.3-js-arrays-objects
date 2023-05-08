@@ -7,6 +7,14 @@
     Tip: you can create another variable as a placeholder for the sum first.
 */
 
+let grades = [56, 87, 99, 40];
+// grades.push(68);
+// let firstElement = grades.shift();
+// grades.splice(3, 1, 60);
+//let average = grades.reduce((a, c) => a + c) / grades.length;
+
+console.log(grades);
+
 /*Q2:
 1. Create an object called vehicle with following properties:
     a. name (String)
@@ -17,3 +25,18 @@
 Feel free to put any value.
 2. Use the for-in loop to display both the properties and values of the object.
 */
+
+let vehicle = {
+  name: "Car",
+  brand: "Malibu",
+  yearOfMake: 2020,
+  numberOfWheels: 4,
+  isEnvironmentFriendly: true,
+  color: "white",
+  doorsCount: 4,
+  hetchBack: false,
+};
+
+for (const key in vehicle) {
+  console.log(key, vehicle[key]);
+}
